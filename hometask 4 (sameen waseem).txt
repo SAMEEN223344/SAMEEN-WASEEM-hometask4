@@ -1,0 +1,67 @@
+#include <iostream>
+using namespace std;
+int main ()
+{ 
+cout<<"SAMEEN WASEEM"<<endl;
+cout<<"ME-15(A)"<<endl;
+cout<<"465064"<<endl;
+//TASK-1 :write a program in C++ that prints numbers from 1 to 150 except multiples of 10
+cout<<"TASK-1"<<endl;
+cout<<"numbers from 1 to 150 except multiples of 10"<<endl;
+	for (int a=1; a<=150; a++) {
+		if (a%10==0) {
+			continue;
+		}
+		cout<<a<<endl;
+	}
+}
+//end of task-1
+
+//TASK-2:Write a C++ program to find the sum of digits of a number. 
+{
+cout<<"TASK-2"<<endl;
+cout<<"sum of digits of given number"<<endl;
+	int b, sum;
+	cout<<"enter value of a number "<<endl;
+	cin>>b;
+	if (b>0) {
+		do {
+			sum = sum+(b%10);
+			b=b/10;
+		 }
+			while(b!=0);
+			cout<<"the sum of digits:"<<sum<<endl;
+	}
+	else {
+		cout<<"the number may be undefined"<<endl;
+	}
+}
+//end of task-2
+
+//TASK-3:Write a program in C++ to check whether a number is prime or not. 
+{
+  cout<<"TASK-3"<<endl;	
+  cout<<"check whether the given no. is prime or not"<<endl;
+  int x, y;
+  bool prime = true;
+  cout << "value of a positive integer ";
+  cin >> y;
+
+  if (y == 0 || y == 1) {
+    prime = false;}
+
+  for (x = 2; x <= y/2; ++x) {
+    if (y % x == 0) {
+      prime = false;
+      break; }
+  }
+
+  if (prime)  {
+   cout << y << " is a prime number"; }
+  
+  else {
+  cout << y << " is not a prime number"; 
+}
+//end of task-3
+return 0;
+}
